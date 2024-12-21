@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.jobs {
+    width: 100%;
+}
+.jobs-2 {
+    border-right: 1px solid gray;
+}
+.jobs-3 {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    align-items: center;
+    margin-bottom: 20px;
+}
+.jobs-3 input {
+    border: 1px solid gray;
+    outline: none;
+    /* margin-left: 20px; */
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.jobs-3 i {
+    margin-top: 10px;
+    margin-right: 40px;
+    color: white;
+    background-color: black;
+    padding: 13px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.jobs-4 {
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+
+.jobs-5 {
+    width: 40%;
+    /* border: 1px solid black; */
+    /* height: 55vh; */
+    float: left;
+    padding: 20px;
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.jobs-icon {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.jobs-icon p {
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 2px 8px;
+}
+.jobs-icon i {
+    margin-top: 5px;
+}
+.jobs-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+.jobs-heading h1 {
+    font-size: 26px;
+    text-decoration: none;
+    text-align: center;
+    color: gray;
+    font-weight: 600;
+}
+.jobs-heading p {
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+}
+.jobs-paragraph {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.jobs-paragraph span {
+    /* border: 1px solid black; */
+    font-size: 20px;
+    color: black;
+}
+.jobs-button {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jobs-btn {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.jobs-btn-1 {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.jobs-7 {
+    padding: 20px;
+}
+.jobs-8 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-name {
+    /* border: 1px solid black; */
+    margin-top: 10px;
+}
+.modal-email {
+    margin-top: 10px;
+}
+.modal-phone {
+    margin-top: 10px;
+}
+.modal-address {
+    margin-top: 10px;
+}
+.modal-resume {
+    margin-top: 10px;
+}
+.modal-button button {
+    margin-top: 20px;
+    width: 100%;
+}

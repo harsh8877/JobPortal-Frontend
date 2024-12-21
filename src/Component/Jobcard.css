@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.jobcard-section {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.jobcard-section-1 {
+  width: 100%;
+  height: auto;
+}
+.jobcard-section-1 h1 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.jobcard {
+  width: 40%;
+  height: auto;
+  /* border: 1px solid black; */
+  float: left;
+  padding: 20px;
+  /* margin-left: 80px; */
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.jobcard-icon {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+.jobcard-icon p {
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding: 2px 8px;
+}
+.jobcard-icon i {
+  margin-top: 5px;
+}
+.jobcard-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+.jobcard-heading h1 {
+  font-size: 26px;
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+  font-weight: 600;
+}
+.jobcard-heading p {
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+}
+.jobcard-paragraph {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.jobcard-paragraph span {
+  /* border: 1px solid black; */
+  font-size: 20px;
+  color: black;
+}
+.jobcard-button {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jobcard-btn {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.jobcard-btn-1 {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.jobcard-2 {
+  /* border: 1px solid black; */
+  padding: 20px;
+}
+.jobcard-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-name {
+  /* border: 1px solid black; */
+  margin-top: 10px;
+}
+.modal-email {
+  margin-top: 10px;
+}
+.modal-phone {
+  margin-top: 10px;
+}
+.modal-address {
+  margin-top: 10px;
+}
+.modal-resume {
+  margin-top: 10px;
+}
+.modal-button button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .jobcard-section {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    /* margin-top: 150px; */
+  }
+  .jobcard-section-1 {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .jobcard-section-1 h1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  .jobcard {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+  }
+  .jobcard-button {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+  }
+}

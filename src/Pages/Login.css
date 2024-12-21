@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login {
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 60vh;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.login h1 {
+    text-align: center;
+}
+.form-email {
+    /* border: 1px solid black; */
+    display: block;
+    margin: auto;
+    width: 60%;
+    text-align: left;
+}
+label {
+    font-size: 18px;
+}
+input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.form-password {
+    /* border: 1px solid black; */
+    display: block;
+    margin: auto;
+    width: 60%;
+    text-align: left;
+    margin-top: 30px;
+}
+.login-btn {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(92, 92, 238);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.login-text {
+    text-align: center;
+    margin-top: 15px;
+}
+.login-link {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .login {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .login h1 {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .form-email {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    label {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: auto;
+    }
+    input {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .form-password {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .login-btn {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
