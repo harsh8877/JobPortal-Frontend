@@ -9,10 +9,37 @@ const Jobs = () => {
   const [data, setdata] = useState([]);
   const [filterData, setfilterData] = useState("");
   const [filterCity, setFilterCity] = useState([]);
+  const [formdata, setformdata] = useState({});
+
 
   const [filteredData, setfilteredData] = useState([]);
 
   const users = false;
+
+  const changedata = (event) => {
+    setformdata({
+      ...formdata,
+      [event.target.name]: event.target.value,
+    });
+    console.log(formdata);
+  };
+
+  const submitdata = async () => {
+    const res = await fetch("http://localhost:5000/apply", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formdata),
+    });
+    const data = await res.text();
+    console.log(data);
+    if(!res.ok){
+      alert("Failed to apply");
+      window.location.href = '/login';
+    }
+    else{
+      alert("Applied successfully");
+    }
+  };
 
   useEffect(() => {
     fetch("http://localhost:5000/jobs", {
@@ -47,8 +74,12 @@ const Jobs = () => {
     });
 
     const cdata = data.filter((d) => {
-      return filterCity.includes(d.location.toLowerCase());
+      return (
+        filterCity.includes(d.location.toLowerCase()) ||
+        filterCity.includes(d.category.toLowerCase())
+      );
     });
+
 
     console.log("filterdata", filterData.length);
 
@@ -76,6 +107,7 @@ const Jobs = () => {
     }
   };
 
+
   return (
     <>
       <Navbar />
@@ -88,20 +120,8 @@ const Jobs = () => {
                 <input type="text" placeholder="Search..." onChange={getData} />
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
-              <div>
+              <div className="jobs-4">
                 <h3>Filters By City</h3>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="exampleRadios"
-                    id="exampleRadios1"
-                    value="all"
-                  />
-                  <label class="form-check-label" for="exampleRadios1">
-                    All
-                  </label>
-                </div>
                 <div class="form-check">
                   <input
                     class="form-check-input"
@@ -122,6 +142,7 @@ const Jobs = () => {
                     name="exampleRadios"
                     id="exampleRadios1"
                     value="hyderabad"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Hyderabad
@@ -134,6 +155,7 @@ const Jobs = () => {
                     name="exampleRadios"
                     id="exampleRadios1"
                     value="gurgaon"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Gurgaon
@@ -146,6 +168,7 @@ const Jobs = () => {
                     name="exampleRadios"
                     id="exampleRadios1"
                     value="mumbai"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Mumbai
@@ -158,6 +181,7 @@ const Jobs = () => {
                     name="exampleRadios"
                     id="exampleRadios1"
                     value="ahemadabad"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Ahemadabad
@@ -170,6 +194,7 @@ const Jobs = () => {
                     name="exampleRadios"
                     id="exampleRadios1"
                     value="surat"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Surat
@@ -182,6 +207,7 @@ const Jobs = () => {
                     name="exampleRadios"
                     id="exampleRadios1"
                     value="pune"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Pune
@@ -194,6 +220,7 @@ const Jobs = () => {
                     name="exampleRadios"
                     id="exampleRadios1"
                     value="chennai"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Chennai
@@ -206,6 +233,7 @@ const Jobs = () => {
                     name="exampleRadios"
                     id="exampleRadios1"
                     value="delhi"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Delhi
@@ -218,6 +246,7 @@ const Jobs = () => {
                     name="exampleRadios"
                     id="exampleRadios1"
                     value="goa"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Goa
@@ -232,10 +261,11 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="devops"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
-                    All
+                    Devops
                   </label>
                 </div>
                 <div class="form-check">
@@ -244,7 +274,34 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="frontend"
+                    onClick={getcity}
+                  />
+                  <label class="form-check-label" for="exampleRadios1">
+                    Frontend
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="exampleRadios"
+                    id="exampleRadios1"
+                    value="backend"
+                    onClick={getcity}
+                  />
+                  <label class="form-check-label" for="exampleRadios1">
+                    Backend
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="exampleRadios"
+                    id="exampleRadios1"
+                    value="technology"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Technology
@@ -256,7 +313,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="enginerring"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Engineering
@@ -268,7 +326,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="healthcare"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Healthcare
@@ -280,7 +339,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="finance"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Finance
@@ -292,7 +352,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="marketing"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Marketing
@@ -304,7 +365,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="humanresouces"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Human Resources
@@ -316,7 +378,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="education"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Education
@@ -328,7 +391,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="creativearts"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Creative Arts
@@ -340,7 +404,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="construction"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Construction
@@ -352,7 +417,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="customerservice"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Customer Service
@@ -364,7 +430,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="legal"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Legal
@@ -376,7 +443,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="hospitality"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Hospitality
@@ -388,7 +456,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="manufacturing"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Manufacturing
@@ -400,7 +469,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="researchanddevelopment"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Reserch And Development
@@ -412,7 +482,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="administation"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Administation
@@ -424,7 +495,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="realestate"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Real Estate
@@ -436,7 +508,8 @@ const Jobs = () => {
                     type="checkbox"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="all"
+                    value="non-profitandvolunteer"
+                    onClick={getcity}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Non-Profit And Volunteer
@@ -462,6 +535,7 @@ const Jobs = () => {
                         <h1>{user.title}</h1>
                         <p>{user.description}</p>
                         <p>{user.location}</p>
+                        <p>{user.category}</p>
                         <p className="jobs-paragraph">
                           <span>
                             <i class="fa-solid fa-money-bill"></i>
@@ -508,27 +582,48 @@ const Jobs = () => {
                               <div>
                                 <div className="modal-name">
                                   <label>Your Name</label>
-                                  <input type="text" name="name" />
+                                  <input
+                                    type="text"
+                                    name="name"
+                                    onChange={changedata}
+                                  />
                                 </div>
 
                                 <div className="modal-email">
                                   <label>Your Email</label>
-                                  <input type="email" name="email" />
+                                  <input
+                                    type="email"
+                                    name="email"
+                                    onChange={changedata}
+                                  />
                                 </div>
 
                                 <div className="modal-phone">
                                   <label>Your Phone</label>
-                                  <input type="number" name="phone" />
+                                  <input
+                                    type="number"
+                                    name="phone"
+                                    onChange={changedata}
+                                  />
                                 </div>
 
                                 <div className="modal-address">
                                   <label>Your Address</label>
-                                  <input type="text" name="address" />
+                                  <input
+                                    type="text"
+                                    name="address"
+                                    onChange={changedata}
+                                  />
                                 </div>
 
                                 <div className="modal-resume">
                                   <label>Resume</label>
-                                  <input type="file" name="name" />
+                                  <input
+                                    type="file"
+                                    name="resume"
+                                    accept="image/*"
+                                    onChange={changedata}
+                                  />
                                 </div>
                               </div>
 
@@ -537,6 +632,7 @@ const Jobs = () => {
                                   type="button"
                                   className="btn btn-danger"
                                   data-bs-dismiss="modal"
+                                  onClick={submitdata}
                                 >
                                   submit
                                 </button>

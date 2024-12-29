@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState , useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const isLogginIn = true;
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const userLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    setIsLoggedIn(userLoggedIn);
+  } , []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    setIsLoggedIn(false);
+    window.location.href = "/login";
+  }
+
+
   const navLinks = [
     {
       name: "Home",
@@ -47,11 +60,13 @@ const Navbar = () => {
                   Apply Job
                 </NavLink>
               </li>
-              {isLogginIn ? (
+
+              {isLoggedIn ? (
                 <li>
                   <NavLink
                     to="/logout"
                     className="text-white text-decoration-none"
+                    onClick={handleLogout}
                   >
                     Log Out
                   </NavLink>

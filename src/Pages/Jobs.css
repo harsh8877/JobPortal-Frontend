@@ -145,3 +145,87 @@
     margin-top: 20px;
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .jobs {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .jobs-3 {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+    }
+    .jobs-3 input {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .jobs-3 i {
+        width: 15%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }    
+    .jobs-4 {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .jobs-5 {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .jobs-img img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+    .jobs-heading h1 {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .jobs-heading p {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .jobs-button {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .jobs-btn {
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .jobs-btn-1 {
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+}

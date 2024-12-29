@@ -172,6 +172,14 @@
   .dashboard-category button {
     margin-left: 10px;
   }
+
+  .dashboard-3 {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
   .dashboard-4 {
     /* border: 1px solid red; */
     width: 100%;
@@ -179,13 +187,20 @@
     display: block;
     margin: auto;
   }
+  .dashboard-4 h3 {
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
   .dashboard-5 {
     /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: auto;
     display: block;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .dashboard-5 table {
     /* border: 1px solid red; */
@@ -193,5 +208,24 @@
     height: auto;
     display: block;
     margin: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  thead tr th {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  tbody tr td {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    text-align: center;
   }
 }

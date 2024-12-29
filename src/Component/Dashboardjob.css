@@ -1,159 +1,267 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .dashboardjob {
-    width: 100%;
-    height: 100vh;
-    /* border: 1px solid black; */
+  width: 100%;
+  height: 100vh;
+  /* border: 1px solid black; */
 }
 .dashboardjob-1 {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 .dashboardjob-2 {
-    background-color: rgb(236, 233, 233);
+  background-color: rgb(236, 233, 233);
 }
 .dashboardjob-img img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+}
+.dashboardjob-link {
+  /* border: 1px solid black; */
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+}
+.dashboardjob-user {
+  /* border: 1px solid red; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 120px;
+}
+.dashboardjob-user i {
+  font-size: 22px;
+  color: black;
+  /* border: 1px solid black; */
+}
+.dashboardjob-user button {
+  border: none;
+  background-color: rgb(236, 233, 233);
+}
+.dashboardjob-job {
+  /* border: 1px solid red; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 120px;
+}
+.dashboardjob-job i {
+  font-size: 22px;
+  color: black;
+  /* border: 1px solid black; */
+}
+.dashboardjob-job button {
+  border: none;
+  background-color: rgb(236, 233, 233);
+}
+.dashboardjob-category {
+  /* border: 1px solid red; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 120px;
+}
+.dashboardjob-category i {
+  font-size: 22px;
+  color: black;
+  /* border: 1px solid black; */
+}
+.dashboardjob-category button {
+  border: none;
+  background-color: rgb(236, 233, 233);
+}
+
+.dashboardjob-4 {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+}
+.dashboardjob-4 h3 {
+  margin-top: 30px;
+  font-size: 32px;
+  margin-left: 40px;
+}
+.dashboardjob-4 button {
+  float: right;
+  /* border: 1px solid gray; */
+}
+.dashboardjob-4 .dashboardjob-btn {
+  background-color: black;
+  color: white;
+}
+.dashboradjob-5 {
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-top: 80px;
+}
+.dashboardjob-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.dashboardjob-title h4 {
+  margin-left: 30px;
+}
+
+.dashboardjob-button {
+  margin: 0;
+  padding: 0;
+}
+
+.dashboardjob-category-1 label {
+  margin-top: 10px;
+  /* margin-left: 22px; */
+}
+.dashboardjob-category-1 select {
+  width: 100%;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  border: 1px solid gray;
+}
+label {
+  text-align: left;
+}
+.modal-name {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+}
+.modal-email {
+  margin-top: 10px;
+}
+.modal-phone {
+  margin-top: 10px;
+}
+.modal-address {
+  margin-top: 10px;
+}
+.modal-resume {
+  margin-top: 10px;
+}
+.dashboardjob-6 {
+  padding: 20px;
+}
+.dashboardjob-7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboardjob {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .dashboardjob-1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .dashboardjob-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .dashboardjob-img img {
     width: 120px;
     height: 120px;
     display: block;
     margin: auto;
-    margin-top: 100px;
-}
-.dashboardjob-link {
-    /* border: 1px solid black; */
+  }
+  .dashboardjob-link {
+    /* border: 1px solid red; */
     display: block;
     margin: auto;
     margin-top: 80px;
-}
-.dashboardjob-user {
+    padding-bottom: 40px;
+  }
+  .dashboardjob-user {
     /* border: 1px solid red; */
-    width: 40%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 26px;
-    font-weight: 600;
-    margin-left: 120px;
-}
-.dashboardjob-user i {
-    font-size: 22px;
-    color: black;
-    /* border: 1px solid black; */
-}
-.dashboardjob-user button {
-    border: none;
-    background-color: rgb(236, 233, 233);
-}
-.dashboardjob-job {
-    /* border: 1px solid red; */
-    width: 40%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 26px;
-    font-weight: 600;
-    margin-left: 120px;
-}
-.dashboardjob-job i {
-    font-size: 22px;
-    color: black;
-    /* border: 1px solid black; */
-}
-.dashboardjob-job button {
-    border: none;
-    background-color: rgb(236, 233, 233);
-}
-.dashboardjob-category {
-    /* border: 1px solid red; */
-    width: 40%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 26px;
-    font-weight: 600;
-    margin-left: 120px;
-}
-.dashboardjob-category i {
-    font-size: 22px;
-    color: black;
-    /* border: 1px solid black; */
-}
-.dashboardjob-category button {
-    border: none;
-    background-color: rgb(236, 233, 233);
-}
-
-.dashboardjob-4 {
-    /* border: 1px solid black; */
     width: 100%;
-    height: 100%;
-}
-.dashboardjob-4 h3 {
-    margin-top: 30px;
-    font-size: 32px;
-    margin-left: 40px;
-}
-.dashboardjob-4 button {
-    float: right;
-    border: 1px solid gray;
-}
-.dashboardjob-4 .dashboardjob-btn {
-    background-color: black;
-    color: white;
-}
-.dashboradjob-5 {
-    width: 100%;
-    /* border: 1px solid black; */
-    margin-top: 80px;
-}
-.dashboardjob-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-.dashboardjob-title h4 {
-    margin-left: 30px;
-}
-
-.dashboardjob-category-1 label {
-    margin-top: 10px;
-    /* margin-left: 22px; */
-}
-.dashboardjob-category-1 select {
-    width: 100%;
-    padding: 5px;
+    height: auto;
+    margin: 0;
+    padding: 0;
     display: block;
     margin: auto;
-    margin-top: 5px;
-    border: 1px solid gray;
-}
-.modal-name {
-    /* border: 1px solid black; */
-    margin-top: 10px;
-}
-.modal-email {
-    margin-top: 10px;
-}
-.modal-phone {
-    margin-top: 10px;
-}
-.modal-address {
-    margin-top: 10px;
-}
-.modal-resume {
-    margin-top: 10px;
-}
-.dashboardjob-6 {
-    padding: 20px;
-}
-.dashboardjob-7 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+  }
+  .dashboardjob-user button {
+    margin-left: 10px;
+  }
+  .dashboardjob-job {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  .dashboardjob-job button {
+    margin-left: 10px;
+  }
+  .dashboardjob-category {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  .dashboardjob-category button {
+    margin-left: 10px;
+  }  
+  .dashboardjob-3 {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .dashboardjob-4 {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .dashboardjob-4 h3 {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 0;
+    height: auto;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 }

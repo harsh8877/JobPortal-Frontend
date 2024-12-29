@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../Component/Hero";
 import Jobcard from "../Component/Jobcard";
-// import Footer from "../Component/Footer";
+import Footer from "../Component/Footer";
 import Navbar from "../Component/Navbar";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
 
       <Jobcard />
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

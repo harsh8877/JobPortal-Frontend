@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+.jobcard-container {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
 .jobcard-section {
   /* border: 1px solid red; */
   width: 100%;
@@ -20,12 +32,8 @@
   width: 40%;
   height: auto;
   /* border: 1px solid black; */
-  float: left;
+  /* float: left; */
   padding: 20px;
-  /* margin-left: 80px; */
-  margin-left: 100px;
-  margin-top: 40px;
-  margin-bottom: 40px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -126,27 +134,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .jobcard-section {
+  .jobcard-container {
     /* border: 1px solid red; */
     width: 100%;
     height: auto;
     display: block;
     margin: auto;
-    /* margin-top: 150px; */
-  }
-  .jobcard-section-1 {
-    /* border: 1px solid blue; */
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-  }
-  .jobcard-section-1 h1 {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    text-align: center;
+    margin-bottom: 40px;
   }
   .jobcard {
     /* border: 1px solid red; */
@@ -154,13 +148,64 @@
     height: auto;
     display: block;
     margin: auto;
-    margin: 0;
-    padding: 0;
-    margin-top: 60px;
+    margin-top: 30px;
   }
-  .jobcard-button {
-    /* border: 1px solid black; */
+  .jobcard-img img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+  }
+  .jobcard-heading h1 {
     width: 100%;
     height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
   }
+  .jobcard-heading p {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .jobcard-2 {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .modal-name {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .modal-email {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .modal-phone {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .modal-address {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .modal-resume {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  } 
 }
