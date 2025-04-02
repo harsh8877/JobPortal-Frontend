@@ -580,14 +580,14 @@ const Jobs = () => {
                               </div>
 
                               <div>
-                                <div className="modal-name">
+                                {/* <div className="modal-name">
                                   <label>Your Name</label>
                                   <input
                                     type="text"
                                     name="name"
                                     onChange={changedata}
                                   />
-                                </div>
+                                </div> */}
 
                                 <div className="modal-email">
                                   <label>Your Email</label>
@@ -598,14 +598,14 @@ const Jobs = () => {
                                   />
                                 </div>
 
-                                <div className="modal-phone">
+                                {/* <div className="modal-phone">
                                   <label>Your Phone</label>
                                   <input
                                     type="number"
                                     name="phone"
                                     onChange={changedata}
                                   />
-                                </div>
+                                </div> */}
 
                                 <div className="modal-address">
                                   <label>Your Address</label>

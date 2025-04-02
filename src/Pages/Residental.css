@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.residental {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  padding: 30px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.residental h1 {
+  text-align: center;
+  font-size: 28px;
+}
+label {
+  font-size: 16px;
+}
+input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.form-1 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.address-1 {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.address-2 {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.form-2 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.address-3 {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.country {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.state {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.city {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.form-3 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.house {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.house-1 {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+.house-1 input {
+  margin: 0;
+  width: 4%;
+  /* margin-left: 20px; */
+}
+.house-1 label {
+  margin-left: 3px;
+}
+.vehicletype {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.residing-month-year {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.drivinglicenseno {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.form-4 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.drivinglicensephoto {
+  width: 25%;
+  display: block;
+  /* margin: auto; */
+}
+
+.form-5 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.latitude {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.longitude {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.distancemeter {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.goggleaddress {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.form-6 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.pincode {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.mobile {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.home {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.form-7 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-8 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-9 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}

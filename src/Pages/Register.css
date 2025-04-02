@@ -1,212 +1,563 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .register {
-    /* border: 1px solid black; */
-    width: 40%;
-    height: 80vh;
-    display: block;
-    margin: auto;
-    margin-top: 22px;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border: 1px solid black; */
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  padding: 30px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 .register h1 {
-    text-align: center;
-    font-size: 28px;
+  text-align: center;
+  font-size: 28px;
 }
 label {
-    font-size: 17px;
+  font-size: 16px;
 }
 input {
-    width: 100%;
-    margin-top: 10px;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid gray;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.form-1 {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.register-businessgroup {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-company {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-jobType {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-code {
+  width: 100%;
+  display: block;
+  margin: auto;
+  /* margin-top: 10px; */
+}
+.form-2 {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.register-title {
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 .register-fname {
-    /* border: 1px solid black; */
-    width: 70%;
-    display: block;
-    margin: auto;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-mname {
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 .register-lname {
-    /* border: 1px solid black; */
-    width: 70%;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.form-3 {
+   /* border: 1px solid red; */
+   margin-top: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 30px;
+}
+.register-bdate {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-adate {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-religions {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-castcategory {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.form-4 {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.register-jobprofile {
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 .register-email {
-    width: 70%;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
+  width: 100%;
+  display: block;
+  margin: auto;
 }
+.register-pemail {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-aemail {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.form-5 {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.register-bankaccount {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-bankname {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-cugno {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-directno {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.form-6 {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.register-extensionno {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-adharno {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-adharfile {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-panno {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.form-7 {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.register-voterid {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-pancardfile {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-backgroundverificationfile {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-nationality {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.form-8 {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.register-passportno {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-passportexpdate {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-gender {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.register-gender-1 {
+  display: flex;
+  margin-top: 10px;
+}
+.register-gender-1 input {
+  margin: 0;
+  width: 4%;
+  /* margin-left: 20px; */
+}
+.register-gender-1 label {
+  margin-left: 8px;
+}
+.register-maritalstatus {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+
+
+
 .register-password {
-    width: 70%;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
 }
 .register-number {
-    width: 70%;
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.register-role {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+select {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.register-skills {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.register-experince {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.register-location {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.register-portfolio {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.register-resume {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.register-preferredjoblocation {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.register-jobtype {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.register-btn {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  padding: 5px;
+  border: none;
+  background-color: rgb(92, 92, 238);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+/* @media screen and (max-width: 768px) {
+  .register {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .register h1 {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  label {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  input {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid gray;
+  }
+  .register-fname {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .register-lname {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
     display: block;
     margin: auto;
     margin-top: 10px;
-}
-.register-btn {
-    width: 70%;
+  }
+  .register-email {
+    width: 100%;
+    height: auto;
     display: block;
     margin: auto;
-    margin-top: 30px;
-    padding: 5px;
-    border: none;
-    background-color: rgb(92, 92, 238);
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
+    margin-top: 10px;
+  }
+  .register-password {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .register-number {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .register-btn {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+} */
+
+/* @media screen and (min-width: 768px) {
+  .register {
+    border: 1px solid black;
+    width: 40%;
+    height: auto;
+    display: block;
+  }
+  .register h1 {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  label {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  input {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid gray;
+  }
+  .register-fname {
+    border: 1px solid black;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .register-lname {
+    border: 1px solid black;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .register-email {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .register-password {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .register-number {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .register-btn {
+    width: 70%;
+    height: auto;
+    display: block;
+  }
+} */
+
+/* @media (max-width: 768px) {
+  .register {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .register h1 {
+    font-size: 24px;
+  }
+
+  .register-fname,
+  .register-lname,
+  .register-email,
+  .register-password,
+  .register-number {
+    width: 90%;
+  }
+
+  .register-btn {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width: 768px) {
-    .register {
-        /* border: 1px solid black; */
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    .register h1 {
-        /* border: 1px solid black; */
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    label {
-        /* border: 1px solid black; */
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-    input {
-        width: 100%;
-        height: auto;
-        display: block;
-        /* border: 1px solid gray; */
-    }
-    .register-fname {
-        /* border: 1px solid black; */
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-    .register-lname {
-        /* border: 1px solid black; */
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-        margin-top: 10px;
-    }
-    .register-email {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-        margin-top: 10px;
-    }
-    .register-password {
-        width: 100%;
-        height: auto;
-        display: block;
-        /* margin: auto; */
-        margin-top: 10px;
-    }
-    .register-number {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-        margin-top: 10px;
-    }
-    .register-btn {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-}
+@media (max-width: 480px) {
+  .register {
+    width: 90%;
+    padding: 15px;
+  }
 
+  .register h1 {
+    font-size: 20px;
+  }
 
-@media screen and (min-width: 768px) {
-    .register {
-        /* border: 1px solid black; */
-        width: 40%;
-        height: auto;
-        display: block;
-    }
-    .register h1 {
-        /* border: 1px solid black; */
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    label {
-        /* border: 1px solid black; */
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-    input {
-        width: 100%;
-        height: auto;
-        display: block;
-        /* border: 1px solid gray; */
-    }
-    .register-fname {
-        /* border: 1px solid black; */
-        width: 70%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-    .register-lname {
-        /* border: 1px solid black; */
-        width: 70%;
-        height: auto;
-        display: block;
-        margin: auto;
-        margin-top: 10px;
-    }
-    .register-email {
-        width: 70%;
-        height: auto;
-        display: block;
-        margin: auto;
-        margin-top: 10px;
-    }
-    .register-password {
-        width: 70%;
-        height: auto;
-        display: block;
-        /* margin: auto; */
-        margin-top: 10px;
-    }
-    .register-number {
-        width: 70%;
-        height: auto;
-        display: block;
-        margin: auto;
-        margin-top: 10px;
-    }
-    .register-btn {
-        width: 70%;
-        height: auto;
-        display: block;
-    }
-}
+  label {
+    font-size: 15px;
+  }
+
+  input {
+    padding: 6px;
+  }
+
+  .error {
+    margin-left: 10px;
+  }
+
+  .register-fname,
+  .register-lname,
+  .register-email,
+  .register-password,
+  .register-number {
+    width: 100%;
+  }
+
+  .register-btn {
+    width: 100%;
+  }
+} */

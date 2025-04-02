@@ -11,7 +11,7 @@ const Applyjob = () => {
   const [uploadStatus, setUploadStatus] = useState("");
   const [resumes, setResumes] = useState("");
 
-  console.log("Resume3y372",resumes)
+  console.log("Resume3y372", resumes);
 
   // console.log("res", resumes);
   // const [job, setJob] = useState({});
@@ -79,15 +79,6 @@ const Applyjob = () => {
 
   const editJob = async (id) => {
     try {
-      // seteditObject({
-      //   title: title,
-      //   description: description,
-      //   location: location,
-      //   salary: salary,
-      //   category: category,
-      // });
-      // console.log("editJob");
-
       const response = await fetch(`http://localhost:5000/applyjob/${id}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -161,29 +152,28 @@ const Applyjob = () => {
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
-        console.log("resumes",data);
+        console.log("resumes", data);
         setResumes(data.resumes);
       });
   }, []);
 
   useEffect(() => {
-
-    data.forEach(user=>{
+    data.forEach((user) => {
       const id = user._id;
-      const resume = resumes.find(resume=>resume.userId===id)
-      console.log("resume new", resume)
+      const resume = resumes.find((resume) => resume.userId === id);
+      console.log("resume new", resume);
 
-      if(resume){
+      if (resume) {
         user.file = resume.resumeUrl;
-        const newData = data.filter(d=>d._id !== user.id);
-        newData.push(user)
-        setdata(newData)
+        const newData = data.filter((d) => d._id !== user.id);
+        newData.push(user);
+        setdata(newData);
       }
-      
-      // user.file = resume.resumeUrl;
-    })
 
-    
+      console.log("userrrr", user);
+
+      // user.file = resume.resumeUrl;
+    });
   }, [resumes]);
 
   return (
@@ -213,7 +203,15 @@ const Applyjob = () => {
                       <td>{user.email}</td>
                       <td>{user.phone}</td>
                       <td>{user.address}</td>
-                      <td><a target="_blank" href={user.file} rel="noopener noreferrer">Open Resume</a></td>
+                      <td>
+                        <a
+                          target="_blank"
+                          href={user.file}
+                          rel="noopener noreferrer"
+                        >
+                          Open Resume
+                        </a>
+                      </td>
                       <td>
                         <button
                           type="button"
