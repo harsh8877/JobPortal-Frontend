@@ -1,6 +1,6 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+// import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Jobs from "./Pages/Jobs";
